@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+use LaraGram\Foundation\Application;
+use LaraGram\Console\Input\ArgvInput;
+
+define('LARAGRAM_START', microtime(true));
+
+// Register the Composer autoloader...
+require __DIR__.'/vendor/autoload.php';
+
+// Bootstrap LaraGram and handle the command...
+/** @var Application $app */
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+$status = $app->handleCommand(new ArgvInput);
+
+exit($status);
