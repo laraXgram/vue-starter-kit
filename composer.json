@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laraxgram/laragram",
+    "name": "laraxgram/vue-starter-kit",
     "type": "project",
     "description": "LaraGram, an advanced framework for Telegram Bot development.",
     "keywords": [
