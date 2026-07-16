@@ -7,6 +7,7 @@ use LaraGram\Foundation\Configuration\Middleware;
 return Application::configure(basePath: dirname(__DIR__))
     ->withListener(
         bot: __DIR__."/../listens/bot.php",
+        // client:
         commands: __DIR__."/../listens/console.php",
     )
     ->withRouting(
